@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>账号删除申请 | 光之守护者 | HQGAMES</title>
+  <meta name="description" content="《光之守护者》（Patronus of Light）账号与相关数据删除申请说明 — HQGAMES" />
+  <style>
+    :root {
+      --bg: #f3efe6;
+      --paper: #fffcf7;
+      --ink: #1c1a17;
+      --muted: #5c574e;
+      --line: #d9d0c0;
+      --accent: #8b4513;
+      --accent-soft: #f0e6d8;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei",
+        "Noto Sans SC", system-ui, sans-serif;
+      background:
+        radial-gradient(ellipse at top, #fff9ef 0%, var(--bg) 55%, #e8e0d2 100%);
+      color: var(--ink);
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+
+    .wrap {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 20px 72px;
+    }
+
+    header {
+      margin-bottom: 36px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .brand {
+      font-size: 13px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin: 0 0 10px;
+      font-weight: 600;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: clamp(1.6rem, 4vw, 2rem);
+      font-weight: 700;
+      line-height: 1.25;
+    }
+
+    .sub {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.98rem;
+    }
+
+    .card {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 28px 24px;
+      margin-bottom: 20px;
+      box-shadow: 0 10px 30px rgba(28, 26, 23, 0.04);
+    }
+
+    h2 {
+      margin: 0 0 14px;
+      font-size: 1.15rem;
+      color: var(--accent);
+    }
+
+    h3 {
+      margin: 22px 0 8px;
+      font-size: 1rem;
+    }
+
+    p, li { color: var(--ink); }
+    .muted { color: var(--muted); font-size: 0.95rem; }
+
+    ol {
+      margin: 0;
+      padding-left: 1.25rem;
+    }
+
+    ol li { margin: 10px 0; }
+
+    .highlight {
+      background: var(--accent-soft);
+      border-left: 4px solid var(--accent);
+      padding: 14px 16px;
+      border-radius: 0 8px 8px 0;
+      margin: 16px 0;
+    }
+
+    .email {
+      font-weight: 700;
+      font-size: 1.05rem;
+      word-break: break-all;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+
+    .site-nav { margin-bottom: 20px; font-size: 0.92rem; }
+    .site-nav a { margin-right: 14px; }
+
+    .lang-switch {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 18px;
+      font-size: 0.9rem;
+    }
+
+    .lang-switch button {
+      border: 1px solid var(--line);
+      background: transparent;
+      padding: 6px 12px;
+      border-radius: 999px;
+      cursor: pointer;
+      color: var(--muted);
+    }
+
+    .lang-switch button.active {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #fff;
+    }
+
+    [data-lang="en"] { display: none; }
+    body.show-en [data-lang="zh"] { display: none; }
+    body.show-en [data-lang="en"] { display: block; }
+    body.show-en .lang-inline-en { display: inline; }
+    body.show-en .lang-inline-zh { display: none; }
+    .lang-inline-en { display: none; }
+
+    footer {
+      margin-top: 28px;
+      padding-top: 18px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.88rem;
+    }
+
+    code {
+      background: var(--accent-soft);
+      padding: 1px 6px;
+      border-radius: 4px;
+      font-size: 0.92em;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <nav class="site-nav">
+      <a href="index.html">Home / 首页</a>
+      <a href="PrivacyPolicy.html">Privacy Policy / 隐私政策</a>
+      <a href="agreement.html">Terms of Service / 用户协议</a>
+      <a href="account-deletion.html">Account Deletion / 删除账号</a>
+    </nav>
+    <div class="lang-switch" aria-label="Language">
+      <button type="button" class="active" id="btn-zh" onclick="setLang('zh')">中文</button>
+      <button type="button" id="btn-en" onclick="setLang('en')">English</button>
+    </div>
+
+    <header>
+      <p class="brand">HQGAMES</p>
+      <h1>
+        <span data-lang="zh">《光之守护者》账号删除申请</span>
+        <span data-lang="en">Patronus of Light — Account Deletion Request</span>
+      </h1>
+      <p class="sub">
+        <span data-lang="zh">开发者：HQGAMES　｜　应用：光之守护者（Patronus of Light）</span>
+        <span data-lang="en">Developer: HQGAMES　｜　App: Patronus of Light (光之守护者)</span>
+      </p>
+    </header>
+
+    <!-- ZH -->
+    <section class="card" data-lang="zh">
+      <h2>如何申请删除账号及相关数据</h2>
+      <p class="muted">请按下列步骤操作。我们收到完整申请后，将尽快处理您的账号删除请求。</p>
+
+      <div class="highlight">
+        <div>客服邮箱（专用）：</div>
+        <div class="email">
+          <a href="mailto:3162285099@qq.com?subject=%E3%80%8A%E5%85%89%E4%B9%8B%E5%AE%88%E6%8A%A4%E8%80%85%E3%80%8B%E8%B4%A6%E5%8F%B7%E5%88%A0%E9%99%A4%E7%94%B3%E8%AF%B7">3162285099@qq.com</a>
+        </div>
+      </div>
+
+      <ol>
+        <li>使用您注册/登录游戏时绑定的邮箱，或可证明账号归属的邮箱，发送邮件至上方客服邮箱。</li>
+        <li>
+          邮件标题请写：
+          <code>《光之守护者》账号删除申请</code>
+        </li>
+        <li>
+          邮件正文请提供以下信息，以便我们核实身份：
+          <ul>
+            <li>游戏名称：光之守护者 / Patronus of Light</li>
+            <li>登录方式（例如：Google / TapTap / 其他）</li>
+            <li>账号标识（用户 ID、昵称、注册邮箱或第三方账号名等，能协助定位账号即可）</li>
+            <li>下载渠道（Google Play / TapTap / 其他）</li>
+            <li>明确写明：请求永久删除该账号及关联游戏数据</li>
+          </ul>
+        </li>
+        <li>我们核实身份后，将按本页说明删除相关数据，并通过邮件回复处理结果。</li>
+      </ol>
+    </section>
+
+    <section class="card" data-lang="zh">
+      <h2>将删除哪些数据</h2>
+      <p>在身份核实通过且删除流程完成后，通常会删除或匿名化与该账号相关的下列数据（如我们系统中存在）：</p>
+      <ul>
+        <li>账号标识与登录关联信息</li>
+        <li>云存档、角色进度、游戏内档案数据</li>
+        <li>与该账号绑定的游戏内统计/排行相关记录（如适用）</li>
+        <li>客服往来中仅为处理该账号而保存的相关信息（如适用）</li>
+      </ul>
+
+      <h3>可能保留的数据及期限</h3>
+      <ul>
+        <li>
+          <strong>法律或财务合规所需记录</strong>（例如已完成的内购交易凭证、防欺诈/反作弊必要日志）：
+          可能依法或按财务要求保留，一般不超过 <strong>180 天</strong>，到期后删除或匿名化；如法律法规要求更长保存期，则按法定期限执行。
+        </li>
+        <li>
+          <strong>已汇总且不可识别个人的统计数据</strong>：可能继续保留用于运营分析，且无法再关联到您的个人身份。
+        </li>
+        <li>
+          备份系统中的数据可能在常规备份周期内短暂残留，通常在 <strong>90 天内</strong> 随备份轮转清除。
+        </li>
+      </ul>
+
+      <h3>处理时效</h3>
+      <p class="muted">
+        我们一般会在收到有效申请并完成身份核实后的 <strong>30 天内</strong> 完成删除处理；如需更长时间，将通过邮件告知原因与预计完成时间。
+      </p>
+    </section>
+
+    <section class="card" data-lang="zh">
+      <h2>注意事项</h2>
+      <ul>
+        <li>账号删除后不可恢复，游戏进度与云存档将无法找回。</li>
+        <li>已消耗的虚拟物品、内购内容通常无法退款（以各应用商店政策为准）。</li>
+        <li>为防止他人恶意删除，我们可能要求补充必要的身份核验信息。</li>
+      </ul>
+    </section>
+
+    <!-- EN -->
+    <section class="card" data-lang="en">
+      <h2>How to request account &amp; data deletion</h2>
+      <p class="muted">Please follow the steps below. After we receive a complete request, we will process your account deletion as soon as possible.</p>
+
+      <div class="highlight">
+        <div>Customer support email:</div>
+        <div class="email">
+          <a href="mailto:3162285099@qq.com?subject=Patronus%20of%20Light%20Account%20Deletion%20Request">3162285099@qq.com</a>
+        </div>
+      </div>
+
+      <ol>
+        <li>Email us from an address that can prove ownership of the account (e.g. the email used for registration/login).</li>
+        <li>
+          Use this subject line:
+          <code>Patronus of Light Account Deletion Request</code>
+        </li>
+        <li>
+          Include the following in the email body so we can verify your identity:
+          <ul>
+            <li>App name: Patronus of Light / 光之守护者</li>
+            <li>Login method (e.g. Google / TapTap / other)</li>
+            <li>Account identifiers (user ID, nickname, registered email, or third-party account name)</li>
+            <li>Store / channel (Google Play / TapTap / other)</li>
+            <li>A clear statement that you request permanent deletion of the account and associated game data</li>
+          </ul>
+        </li>
+        <li>After verification, we will delete relevant data as described on this page and reply by email.</li>
+      </ol>
+    </section>
+
+    <section class="card" data-lang="en">
+      <h2>What data will be deleted</h2>
+      <p>After successful verification and completion of the deletion process, we typically delete or anonymize the following account-related data (if present in our systems):</p>
+      <ul>
+        <li>Account identifiers and login-related information</li>
+        <li>Cloud saves, character progress, and in-game profile data</li>
+        <li>Account-linked gameplay statistics / ranking records (where applicable)</li>
+        <li>Support correspondence retained solely for handling that account (where applicable)</li>
+      </ul>
+
+      <h3>Data that may be retained &amp; retention period</h3>
+      <ul>
+        <li>
+          <strong>Records required for legal or financial compliance</strong>
+          (e.g. completed in-app purchase receipts, anti-fraud / anti-cheat logs as necessary):
+          may be retained as required by law or accounting needs, generally for no more than
+          <strong>180 days</strong>, then deleted or anonymized; longer if required by law.
+        </li>
+        <li>
+          <strong>Aggregated, non-identifiable statistics</strong> may be retained for operations analysis and cannot be linked back to you.
+        </li>
+        <li>
+          Residual copies in backups may remain for a normal backup cycle and are typically purged within
+          <strong>90 days</strong>.
+        </li>
+      </ul>
+
+      <h3>Processing time</h3>
+      <p class="muted">
+        We generally complete deletion within <strong>30 days</strong> after receiving a valid request and verifying identity.
+        If more time is needed, we will notify you by email with the reason and expected timeline.
+      </p>
+    </section>
+
+    <section class="card" data-lang="en">
+      <h2>Important notes</h2>
+      <ul>
+        <li>Account deletion is irreversible. Progress and cloud saves cannot be recovered.</li>
+        <li>Consumed virtual items / purchases are generally non-refundable (subject to store policies).</li>
+        <li>We may request additional verification to prevent unauthorized deletion requests.</li>
+      </ul>
+    </section>
+
+    <footer>
+      <span data-lang="zh">© HQGAMES　｜　《光之守护者》账号删除说明页　｜　如有疑问请联系 3162285099@qq.com</span>
+      <span data-lang="en">© HQGAMES　｜　Patronus of Light Account Deletion　｜　Contact: 3162285099@qq.com</span>
+    </footer>
+  </div>
+
+  <script>
+    function setLang(lang) {
+      document.body.classList.toggle("show-en", lang === "en");
+      document.getElementById("btn-zh").classList.toggle("active", lang === "zh");
+      document.getElementById("btn-en").classList.toggle("active", lang === "en");
+    }
+  </script>
+</body>
+</html>
