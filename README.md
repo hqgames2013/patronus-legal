@@ -4,6 +4,6 @@ GitHub Pages site for the Patronus of Light (光之守护者) homepage, privacy 
 
 Google Play / OAuth should use:
 
-- Homepage: `https://<user>.github.io/patronus-legal/`
-- Privacy: `https://<user>.github.io/patronus-legal/PrivacyPolicy.html`
-- Terms: `https://<user>.github.io/patronus-legal/agreement.html`
+- Homepage: https://hqgames2013.github.io/patronus-legal/
+- Privacy: https://hqgames2013.github.io/patronus-legal/PrivacyPolicy.html
+- Terms: https://hqgames2013.github.io/patronus-legal/agreement.html
